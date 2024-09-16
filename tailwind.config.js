@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "sans-serif": "Roboto, sans-serif",
+        "sans": "Roboto, sans-serif",
       },
       colors: {
         "tomato": "hsl(4, 100%, 67%)",
@@ -15,6 +15,9 @@ export default {
         "charcoal-grey": "hsl(235, 18%, 26%)",
         "grey": "hsl(231, 7%, 60%)",
         "white": "hsl(0, 0%, 100%)"
+      },
+      listStyleImage: {
+        checkmark: "url('/assets/icon-list.svg')",
       }
     },
   },

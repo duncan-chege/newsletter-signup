@@ -1,9 +1,9 @@
 function App() {
 return (
-<main className="bg-dark-gray h-screen font-sans">
-  <div className="px-10 w-2/3 bg-white grid grid-cols-2">
+<main className="bg-dark-gray h-screen font-sans flex justify-center items-center">
+  <div className="py-5 pl-10 pr-4 w-3/5 h-min bg-white grid grid-cols-1 md:grid-cols-2 rounded-3xl place-content-center">
     <div>
-      <h1 className="text-4xl font-bold">Stay updated!</h1>
+      <h1 className="mt-20 text-4xl font-bold">Stay updated!</h1>
       <p className="py-4">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul>
         <li className="mb-2 flex items-center">
@@ -21,14 +21,14 @@ return (
       </ul>
 
       <form onSubmit="" className="mt-12 flex flex-col">
-          <label htmlFor="email" className="">Email address</label>
-          <input type="text" id="email" name="email" className="" aria-required="true" />
-          <button type="submit">Subscribe to monthly newsletter</button>
+          <label className="mb-2 text-sm font-bold" htmlFor="email">Email address</label>
+          <input className="py-3 px-8 rounded-md border-solid border-grey/75 border-2" type="text" id="email" name="email" placeholder="email@company.com" aria-required="true" />
+          <button className="bg-dark-gray text-white py-3 mt-4 rounded-lg hover:bg-gradient-to-r from-tomato to-orange-500" type="submit">Subscribe to monthly newsletter</button>
       </form>
 
     </div>
     <div>
-      <img src="../public/assets/illustration-sign-up-desktop.svg" alt="" />
+      <img className="max-w-96 h-auto float-right" src="../public/assets/illustration-sign-up-desktop.svg" alt="" />
     </div>
   </div>
 </main>

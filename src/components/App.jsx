@@ -70,7 +70,7 @@ function App() {
                 placeholder="email@company.com" 
                 aria-required="true" 
               />
-              <button className="bg-dark-gray text-white py-3 mt-4 rounded-lg hover:bg-gradient-to-r from-tomato to-orange-500 transition duration-300" type="submit">Subscribe to monthly newsletter</button>
+              <button className="bg-dark-gray text-white py-3 mt-4 rounded-lg hover:bg-gradient-to-r from-tomato to-orange-500" type="submit">Subscribe to monthly newsletter</button>
           </form>
 
         </div>

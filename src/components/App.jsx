@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Success from "./Success";
 
 function App() {
 
@@ -6,9 +7,11 @@ function App() {
   const [emailValue, setEmailValue] = useState("");
   const [emailError, setEmailError] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [submittedSuccess, setSubmittedSuccess] = useState(false); // New state for success
 
   const handleEmailChange = (event) => {
-    setEmailValue(event.target.value);
+    const emailV = event.target.value;
+    setEmailValue(emailV);
 
     if (!emailPattern.test(emailV)){
       setEmailError("Valid email required");
@@ -20,6 +23,14 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+    
+    if(emailValue !== "" && emailPattern.test(emailValue)){
+      setSubmittedSuccess(true);
+    }
+  }
+
+  if (submittedSuccess){
+    return <Success />
   }
 
   return (

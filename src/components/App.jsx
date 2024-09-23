@@ -29,8 +29,14 @@ function App() {
     }
   }
 
+  const goBack = () => {
+    setSubmitted(false);
+    setSubmittedSuccess(false);
+    setEmailValue("");
+  }
+
   if (submittedSuccess){
-    return <Success />
+    return <Success email = {emailValue} backToForm={goBack} />
   }
 
   return (
@@ -71,6 +77,7 @@ function App() {
                 aria-required="true" 
               />
               <button className="bg-dark-gray text-white py-3 mt-4 rounded-lg hover:bg-gradient-to-r from-tomato to-orange-500" type="submit">Subscribe to monthly newsletter</button>
+              
           </form>
 
         </div>

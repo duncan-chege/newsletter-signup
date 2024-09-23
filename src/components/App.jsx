@@ -47,15 +47,15 @@ function App() {
           <p className="text-base py-4">Join 60,000+ product managers receiving monthly updates on:</p>
           <ul className="text-base">
             <li className="mb-2 flex items-center">
-              <img src="/assets/icon-list.svg" alt="icon" className="mr-4 w-4 h-4" />
+              <img src="./assets/icon-list.svg" alt="icon" className="mr-4 w-4 h-4" />
               Product discovery and building what matters
             </li>
             <li className="mb-2 flex items-center">
-              <img src="/assets/icon-list.svg" alt="icon" className="mr-4 w-4 h-4" />
+              <img src="./assets/icon-list.svg" alt="icon" className="mr-4 w-4 h-4" />
               Measuring to ensure updates are a success
             </li>
             <li className="mb-2 flex items-center">
-              <img src="/assets/icon-list.svg" alt="icon" className="mr-4 w-4 h-4" />
+              <img src="./assets/icon-list.svg" alt="icon" className="mr-4 w-4 h-4" />
               And much more!
             </li>
           </ul>
@@ -82,8 +82,8 @@ function App() {
 
         </div>
         <div className="lg:order-2 order-1">
-          <img className="lg:block hidden max-w-96 h-auto float-right" src="../public/assets/illustration-sign-up-desktop.svg" alt="" />
-          <img className="lg:hidden block h-auto w-full" src="../public/assets/illustration-sign-up-mobile.svg" alt="" />
+          <img className="lg:block hidden max-w-96 h-auto float-right" src="./assets/illustration-sign-up-desktop.svg" alt="" />
+          <img className="lg:hidden block h-auto w-full" src="./assets/illustration-sign-up-mobile.svg" alt="" />
         </div>
       </div>
     </main>

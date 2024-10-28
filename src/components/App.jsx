@@ -40,9 +40,9 @@ function App() {
   }
 
   return (
-    <main className="bg-dark-gray h-screen font-sans flex justify-center items-center">
-      <div className="lg:py-5 lg:pl-10 lg:pr-4 lg:w-3/5 md:w-4/6 md:h-auto h-screen bg-white grid grid-cols-1 lg:grid-cols-2 md:rounded-3xl md:place-content-center">
-        <div className="lg:order-1 order-2 lg:mt-20 mt-0 mx-6">
+    <main className="bg-dark-gray min-h-screen font-sans flex justify-center items-center">
+      <div className="lg:py-5 lg:pl-10 lg:pr-4 lg:w-3/5 md:w-4/6 md:h-auto h-screen bg-white grid grid-cols-1 lg:grid-cols-2 md:rounded-3xl place-content-start">
+        <div className="lg:order-1 order-2 lg:mt-20 my-6 mx-6">
           <h1 className="text-4xl font-bold">Stay updated!</h1>
           <p className="text-base py-4">Join 60,000+ product managers receiving monthly updates on:</p>
           <ul className="text-base">
@@ -82,8 +82,8 @@ function App() {
 
         </div>
         <div className="lg:order-2 order-1">
-          <img className="lg:block hidden max-w-96 h-auto float-right" src="./assets/illustration-sign-up-desktop.svg" alt="" />
-          <img className="lg:hidden block h-auto w-full" src="./assets/illustration-sign-up-mobile.svg" alt="" />
+          <img className="lg:block hidden h-full float-right" src="./assets/illustration-sign-up-desktop.svg" alt="" />
+          <img className="lg:hidden block h-full w-full" src="./assets/illustration-sign-up-mobile.svg" alt="" />
         </div>
       </div>
     </main>
